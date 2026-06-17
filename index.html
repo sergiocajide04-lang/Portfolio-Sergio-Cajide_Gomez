@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergio Cajide Gómez — Business · Technology · Digital Transformation</title>
+  <meta name="description" content="Portfolio de Sergio Cajide Gómez. Empresa y Tecnología, Marketing Digital, Revenue Management y Transformación Digital.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <noscript><style>#intro{display:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- ============ INTRO CINEMATIC ============ -->
+  <div id="intro" aria-hidden="true">
+    <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+      <!-- converging blueprint lines -->
+      <path class="intro-line"    d="M-50 120 L600 350"/>
+      <path class="intro-line l2" d="M1250 120 L600 350"/>
+      <path class="intro-line"    d="M-50 580 L600 350"/>
+      <path class="intro-line l2" d="M1250 580 L600 350"/>
+      <path class="intro-line"    d="M600 -50 L600 350"/>
+      <path class="intro-line l2" d="M600 750 L600 350"/>
+      <!-- abstract business shapes -->
+      <rect class="intro-shape" x="170" y="150" width="150" height="95" rx="6"/>
+      <path class="intro-shape" d="M185 230 L215 200 L245 215 L300 165"/>
+      <rect class="intro-shape" x="880" y="430" width="150" height="95" rx="6"/>
+      <circle class="intro-shape" cx="955" cy="200" r="42"/>
+      <path class="intro-shape" d="M210 490 h120 M210 510 h80 M210 530 h100"/>
+      <circle class="intro-node" cx="600" cy="350" r="4"/>
+      <circle class="intro-node" cx="320" cy="245" r="3"/>
+      <circle class="intro-node" cx="880" cy="430" r="3"/>
+      <circle class="intro-node" cx="955" cy="200" r="3"/>
+    </svg>
+    <div class="intro-center">
+      <div class="intro-name">SERGIO CAJIDE</div>
+      <div class="intro-tag"><b>Business</b> • <b>Technology</b> • <b>Digital Transformation</b></div>
+    </div>
+    <button class="intro-skip" type="button">Saltar intro</button>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <img src="img/logo_prueba.png" alt="Sergio Cajide Gómez" class="brand-mark">
+      <span class="brand-text">Sergio Cajide <span class="brand-soft">Gómez</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#formacion">Formación</a></li>
+      <li><a href="herramientas.html">Herramientas</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">&#9776;</button>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="eyebrow hero-eyebrow">Business · Technology · Digital Transformation</p>
+      <h1 class="hero-title">Sergio <span class="grad">Cajide Gómez</span></h1>
+      <div class="hero-roles-line">
+        <span>Empresa &amp; Tecnología</span><span class="sep"></span>
+        <span>Marketing Digital</span><span class="sep"></span>
+        <span>Revenue Management</span><span class="sep"></span>
+        <span>Transformación Digital</span>
+      </div>
+      <p class="hero-desc">Estudiante de Empresa y Tecnología con experiencia en marketing digital y revenue management. Conecto estrategia, datos y tecnología para impulsar la transformación digital de los negocios.</p>
+      <div class="hero-cta">
+        <a href="#experiencia" class="btn btn-primary">Ver experiencia</a>
+        <a href="herramientas.html" class="btn btn-outline">Herramientas</a>
+        <a href="#contacto" class="btn btn-outline">Contacto</a>
+        <a href="sergio_cv.pdf" class="btn btn-outline" download>↓ Descargar CV</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-wrap">
+        <img src="img/foto.png" alt="Sergio Cajide Gómez" class="hero-photo">
+      </div>
+      <div class="hero-card">
+        <div class="hero-tag">Actualmente</div>
+        <div class="hero-roles">
+          <div class="role-item">
+            <span class="role-dot dot-blue"></span>
+            <div>
+              <p class="role-company">Newlink Spain</p>
+              <p class="role-desc">Prácticas · Revenue Management</p>
+            </div>
+          </div>
+          <div class="role-item">
+            <span class="role-dot dot-amber"></span>
+            <div>
+              <p class="role-company">Overfly Consulting</p>
+              <p class="role-desc">Prácticas · Marketing Digital</p>
+            </div>
+          </div>
+          <div class="role-item">
+            <span class="role-dot dot-green"></span>
+            <div>
+              <p class="role-company">USC — Grado Empresa y Tecnología</p>
+              <p class="role-desc">4º Curso · Lugo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section class="block" id="sobre-mi">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 — Sobre mí</p>
+        <h2 class="section-title">Una ficha profesional</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">Soy Sergio, estudiante de último curso de <strong>Empresa y Tecnología</strong> en la Universidad de Santiago de Compostela, con base en A Coruña y actualmente en Lugo.</p>
+          <p>Me interesa especialmente la intersección entre <strong>innovación, creatividad y estrategia empresarial</strong>, con un enfoque claro hacia el marketing y el desarrollo de negocio. A lo largo de mi formación, he participado en proyectos donde he potenciado habilidades como el pensamiento estratégico, el trabajo en equipo y el liderazgo, siempre buscando aportar soluciones con impacto real.</p>
+          <p>Actualmente compagino mis estudios con prácticas en <strong>marketing digital</strong> y <strong>revenue management</strong>, lo que me está permitiendo tener una visión práctica sobre cómo optimizar decisiones, entender al cliente y maximizar el rendimiento de los negocios en entornos competitivos.</p>
+          <p>Además, el deporte ha sido una parte clave de mi desarrollo personal. Como jugador y árbitro de hockey sobre patines, he aprendido la importancia de la <strong>disciplina, la toma de decisiones bajo presión</strong> y la <strong>colaboración</strong>, competencias que aplico de forma directa en el entorno profesional.</p>
+          <p>Mi objetivo es seguir creciendo en el ámbito de la empresa y el marketing, aportando una visión innovadora y tecnológica que contribuya al desarrollo de proyectos sólidos, creativos y orientados a resultados.</p>
+        </div>
+
+        <div class="about-sidebar">
+          <div class="bp-card reveal d1">
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <h3 class="info-card-title">Contacto rápido</h3>
+            <ul class="info-list">
+              <li><span class="info-icon">✉</span> sergio.cajide04@gmail.com</li>
+              <li><span class="info-icon">☎</span> 609 332 572</li>
+              <li><span class="info-icon">📍</span> A Coruña, Galicia</li>
+            </ul>
+          </div>
+          <div class="bp-card reveal d2">
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <h3 class="info-card-title">Formación</h3>
+            <ul>
+              <li class="tl-mini-row">
+                <img src="img/logo_usc.png" alt="USC" class="tl-mini-logo">
+                <div>
+                  <span class="tl-year">2022 – Actualidad</span>
+                  <span class="tl-title">Grado en Empresa y Tecnología</span>
+                  <span class="tl-place">USC, Lugo</span>
+                </div>
+              </li>
+              <li class="tl-mini-row">
+                <img src="img/logo_ird.png" alt="IES Rafael Dieste" class="tl-mini-logo">
+                <div>
+                  <span class="tl-year">2020 – 2022</span>
+                  <span class="tl-title">Bachillerato</span>
+                  <span class="tl-place">IES Rafael Dieste, A Coruña</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Habilidades -->
+      <div class="section-head reveal" style="margin-top:4rem;">
+        <h3 class="section-title" style="font-size:clamp(1.3rem,2.6vw,1.8rem);">Habilidades</h3>
+      </div>
+      <div class="skills-grid">
+        <div class="bp-card skill-block reveal"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></svg></span><span class="skill-index">01</span></div>
+          <h4>Gestión de proyectos</h4><p>Planificación, coordinación y seguimiento de objetivos en entornos multidisciplinares.</p>
+        </div>
+        <div class="bp-card skill-block reveal d1"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V11M11 21V5M16 21v-7M21 21v-4"/></svg></span><span class="skill-index">02</span></div>
+          <h4>Análisis y resolución de problemas</h4><p>Enfoque estructurado para identificar causas y proponer soluciones orientadas a resultados.</p>
+        </div>
+        <div class="bp-card skill-block reveal d2"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.8 2.5 4.2 5.6 4.2 9s-1.4 6.5-4.2 9c-2.8-2.5-4.2-5.6-4.2-9S9.2 5.5 12 3z"/></svg></span><span class="skill-index">03</span></div>
+          <h4>Entornos internacionales</h4><p>Experiencia real trabajando en proyectos europeos con equipos multiculturales.</p>
+        </div>
+        <div class="bp-card skill-block reveal"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8.5 4.7L12 12.4 3.5 7.7 12 3z"/><path d="M3.5 12l8.5 4.7 8.5-4.7M3.5 16.3 12 21l8.5-4.7"/></svg></span><span class="skill-index">04</span></div>
+          <h4>Herramientas digitales</h4><p>Uso de herramientas tecnológicas aplicadas a empresa, marketing y analítica de datos.</p>
+        </div>
+        <div class="bp-card skill-block reveal d1"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.7.6 1.3 1.4 1.3 2.4h5c0-1 .6-1.8 1.3-2.4A6 6 0 0 0 12 3z"/></svg></span><span class="skill-index">05</span></div>
+          <h4>Innovación y emprendimiento</h4><p>Mentalidad orientada a la búsqueda de nuevas oportunidades y soluciones creativas.</p>
+        </div>
+        <div class="bp-card skill-block reveal d2"><span class="tick tl"></span>
+          <div class="skill-head"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1.4-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 11h7M8.5 14h4"/></svg></span><span class="skill-index">06</span></div>
+          <h4>Comunicación multilingüe</h4><p>Capacidad de trabajar y comunicarse en español, gallego e inglés.</p>
+        </div>
+      </div>
+
+      <!-- Idiomas -->
+      <div class="section-head reveal" style="margin-top:3.5rem;">
+        <h3 class="section-title" style="font-size:clamp(1.3rem,2.6vw,1.8rem);">Idiomas</h3>
+      </div>
+      <div class="lang-grid reveal">
+        <div class="lang-card"><span class="lang-name">Español</span><div class="lang-bar-wrap"><div class="lang-bar" data-w="100%"></div></div><span class="lang-level">Nativo</span></div>
+        <div class="lang-card"><span class="lang-name">Gallego</span><div class="lang-bar-wrap"><div class="lang-bar" data-w="100%"></div></div><span class="lang-level">Nativo</span></div>
+        <div class="lang-card"><span class="lang-name">Inglés</span><div class="lang-bar-wrap"><div class="lang-bar" data-w="50%"></div></div><span class="lang-level">B1 — Trinity College</span></div>
+        <div class="lang-card"><span class="lang-name">Portugués</span><div class="lang-bar-wrap"><div class="lang-bar" data-w="20%"></div></div><span class="lang-level">Básico</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="block" id="experiencia">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 — Experiencia</p>
+        <h2 class="section-title">Trayectoria profesional</h2>
+        <p class="section-lead">Módulos conectados de mi recorrido. Pasa el cursor sobre cada tarjeta para ver el detalle.</p>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dot-blue"></div>
+          <div class="bp-card" data-expand>
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <div class="tl-header">
+              <div class="tl-id-row">
+                <div class="company-logo"><img src="img/logo_newlink.png" alt="Newlink Spain"></div>
+                <div>
+                  <h3 class="tl-role">Prácticas en Revenue Management</h3>
+                  <p class="tl-company">Newlink Spain</p>
+                  <p class="hover-hint">↧ Detalle</p>
+                </div>
+              </div>
+              <span class="tl-badge badge-blue">Febrero 2026 – Actualidad</span>
+            </div>
+            <p class="tl-desc">Colaboración en el departamento de revenue management en el sector hotelero, participando en la optimización de estrategias de precios y distribución. Elaboración de pick-ups y forecast de demanda, manejo de herramientas analíticas y apoyo en la definición de estrategias de pricing y gestión de canales. Participación en la gestión de reservas y análisis de datos para maximizar el rendimiento y la ocupación.</p>
+            <div class="tl-tags">
+              <span class="tag">Pick-ups y forecast</span>
+              <span class="tag">Herramientas analíticas</span>
+              <span class="tag">Pricing y distribución</span>
+              <span class="tag">Gestión de reservas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dot-amber"></div>
+          <div class="bp-card" data-expand>
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <div class="tl-header">
+              <div class="tl-id-row">
+                <div class="company-logo"><img src="img/logo_overfly.png" alt="Overfly Consulting"></div>
+                <div>
+                  <h3 class="tl-role">Prácticas en Marketing Digital</h3>
+                  <p class="tl-company">Overfly Consulting</p>
+                  <p class="hover-hint">↧ Detalle</p>
+                </div>
+              </div>
+              <span class="tl-badge badge-amber">Febrero 2026 – Actualidad</span>
+            </div>
+            <p class="tl-desc">Participación en proyectos de marketing digital enfocados al sector hotelero, desarrollando estrategias de SEO, planificación y creación de contenidos, así como análisis de competidores, estudio de palabras clave y detección de oportunidades de posicionamiento. Seguimiento de métricas y optimización continua de estrategias digitales para mejorar la visibilidad y el rendimiento online.</p>
+            <div class="tl-tags">
+              <span class="tag">SEO y SEM</span>
+              <span class="tag">Keywords y competencia</span>
+              <span class="tag">Desarrollo web</span>
+              <span class="tag">Métricas y rendimiento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dot-green"></div>
+          <div class="bp-card" data-expand>
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <div class="tl-header">
+              <div class="tl-id-row">
+                <div class="company-logo plain"><img src="img/logo_fgp.png" alt="Federación Galega de Patinaxe"></div>
+                <div>
+                  <h3 class="tl-role">Árbitro de Hockey Sobre Patines</h3>
+                  <p class="tl-company">Federación Galega de Patinaxe</p>
+                  <p class="hover-hint">↧ Detalle</p>
+                </div>
+              </div>
+              <span class="tl-badge badge-green">Septiembre 2021 – Actualidad</span>
+            </div>
+            <p class="tl-desc">Dirección de partidos de hockey sobre patines en competiciones regionales, garantizando la imparcialidad y el cumplimiento de la normativa. Esta actividad ha reforzado competencias clave transferibles al entorno profesional.</p>
+            <div class="tl-tags">
+              <span class="tag">Liderazgo</span>
+              <span class="tag">Decisión bajo presión</span>
+              <span class="tag">Gestión de conflictos</span>
+              <span class="tag">Comunicación</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dot-violet"></div>
+          <div class="bp-card" data-expand>
+            <span class="tick tl"></span><span class="tick tr"></span>
+            <div class="tl-header">
+              <div class="tl-id-row">
+                <div class="company-logo plain"><img src="img/logo_riazor_light.png" alt="Hockey Club Riazor"></div>
+                <div>
+                  <h3 class="tl-role">Entrenador de Hockey Sobre Patines</h3>
+                  <p class="tl-company">Hockey Club Riazor</p>
+                  <p class="hover-hint">↧ Detalle</p>
+                </div>
+              </div>
+              <span class="tl-badge badge-green">Septiembre 2025 – Actualidad</span>
+            </div>
+            <p class="tl-desc">Planificación y ejecución de entrenamientos de hockey sobre patines, centrados en el desarrollo técnico y táctico de los jugadores. Dirección de partidos y seguimiento del rendimiento individual y colectivo, fomentando el trabajo en equipo y la mejora continua.</p>
+            <div class="tl-tags">
+              <span class="tag">Liderazgo de equipos</span>
+              <span class="tag">Toma de decisiones</span>
+              <span class="tag">Desarrollo técnico y táctico</span>
+              <span class="tag">Planificación</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMACIÓN ============ -->
+  <section class="block" id="formacion">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 — Formación</p>
+        <h2 class="section-title">Formación académica</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="bp-card edu-card reveal">
+          <span class="tick tl"></span><span class="tick tr"></span>
+          <div class="edu-logo-row"><img src="img/logo_usc.png" alt="USC" class="edu-logo"></div>
+          <span class="edu-year">2022 – Actualidad</span>
+          <h3>Grado en Empresa y Tecnología</h3>
+          <p class="edu-place">Universidad de Santiago de Compostela — Campus de Lugo</p>
+          <p class="edu-detail">Formación interdisciplinar que combina gestión empresarial, tecnología de la información e innovación. Actualmente cursando 4º curso.</p>
+        </div>
+        <div class="bp-card edu-card reveal d1">
+          <span class="tick tl"></span><span class="tick tr"></span>
+          <div class="edu-logo-row"><img src="img/logo_ird.png" alt="IES Rafael Dieste" class="edu-logo"></div>
+          <span class="edu-year">2020 – 2022</span>
+          <h3>Bachillerato</h3>
+          <p class="edu-place">IES Rafael Dieste — A Coruña</p>
+          <p class="edu-detail">Modalidad de Humanidades y Ciencias Sociales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HERRAMIENTAS (highlight) ============ -->
+  <section class="block" id="herramientas">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 — Herramientas</p>
+        <h2 class="section-title">Herramientas &amp; tecnologías</h2>
+        <p class="section-lead">Nodos dentro de una arquitectura digital aplicada a empresa, marketing y analítica. Pasa el cursor sobre cada herramienta.</p>
+      </div>
+      <div class="tools-highlight reveal">
+        <div class="tool-node"><img src="img/logo_vscode.png" alt="VS Code"><span>VS Code</span><small>Desarrollo web y proyectos en Python</small></div>
+        <div class="tool-node"><img src="img/logo_googleanalytics.png" alt="Google Analytics"><span>Google Analytics</span><small>Análisis de tráfico y comportamiento web</small></div>
+        <div class="tool-node"><img src="img/logo_semrush.png" alt="Semrush"><span>Semrush</span><small>SEO, keywords y análisis de competencia</small></div>
+        <div class="tool-node"><img src="img/logo_excel.png" alt="Excel"><span>Excel</span><small>Análisis de datos y modelos de gestión</small></div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;" class="reveal">
+        <a href="herramientas.html" class="btn btn-primary">Ver todas las herramientas →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="block" id="proyectos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 — Proyectos &amp; certificaciones</p>
+        <h2 class="section-title">Proyectos internacionales</h2>
+      </div>
+      <div class="project-grid">
+        <div class="bp-card project-card reveal">
+          <span class="tick tl"></span><span class="tick tr"></span>
+          <div class="project-header"><span class="project-tag">Internacional</span><span class="project-date">Ene 2024 – Nov 2024</span></div>
+          <div class="project-logo-wrap"><img src="img/logo_atlic.png" alt="ATLIC"></div>
+          <h3>ATLIC — Atlantic Inoblue Communities</h3>
+          <p>Proyecto europeo de innovación y desarrollo de comunidades del Atlántico. Participación en iniciativas de colaboración internacional con equipos de distintos países, trabajando competencias de comunicación intercultural y gestión de proyectos en entornos multidisciplinares.</p>
+          <div class="tl-tags"><span class="tag">Innovación</span><span class="tag">Colaboración internacional</span><span class="tag">Gestión de proyectos</span></div>
+        </div>
+        <div class="bp-card project-card reveal d1">
+          <span class="tick tl"></span><span class="tick tr"></span>
+          <div class="project-header"><span class="project-tag">Erasmus+</span><span class="project-date">Nov 2024</span></div>
+          <div class="project-logo-wrap"><img src="img/logo_erasmus.png" alt="Erasmus+"></div>
+          <h3>Green Olives Europe Youthpass</h3>
+          <p>Proyecto Erasmus+ centrado en sostenibilidad y emprendimiento verde europeo. Obtención del Youthpass, certificado oficial de la Unión Europea que reconoce las competencias adquiridas en programas de educación no formal e intercambio juvenil.</p>
+          <div class="tl-tags"><span class="tag">Sostenibilidad</span><span class="tag">Emprendimiento</span><span class="tag">Youthpass UE</span></div>
+        </div>
+        <div class="bp-card project-card reveal d2">
+          <span class="tick tl"></span><span class="tick tr"></span>
+          <div class="project-header"><span class="project-tag">Santander</span><span class="project-date">Ene 2024 – Abr 2024</span></div>
+          <div class="project-logo-wrap"><img src="img/logo_santander.png" alt="Santander X Explorer"></div>
+          <h3>Santander X Explorer</h3>
+          <p>Programa de exploración e innovación impulsado por Santander X, orientado al desarrollo de habilidades emprendedoras y la conexión con el ecosistema de startups y talento joven a nivel internacional.</p>
+          <div class="tl-tags"><span class="tag">Emprendimiento</span><span class="tag">Innovación</span><span class="tag">Networking</span></div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:3.5rem;">
+        <h3 class="section-title" style="font-size:clamp(1.3rem,2.6vw,1.8rem);">Certificaciones</h3>
+      </div>
+      <div class="cert-list reveal">
+        <div class="cert-item"><div class="cert-logo"><img src="img/logo_googleanalytics.png" alt="Google Analytics"></div><div class="cert-info"><h4>Google Analytics</h4><p>Universidad de Santiago de Compostela</p></div><span class="cert-date">Abr 2025</span></div>
+        <div class="cert-item"><div class="cert-logo"><img src="img/logo_usc.png" alt="USC"></div><div class="cert-info"><h4>Dixitalización integral nas empresas agroalimentarias</h4><p>Universidad de Santiago de Compostela</p></div><span class="cert-date">Jun 2024</span></div>
+        <div class="cert-item"><div class="cert-logo"><img src="img/logo_rfep.png" alt="Federación Galega de Patinaxe"></div><div class="cert-info"><h4>Título de Entrenador de Hockey — Nivel I</h4><p>Federación Galega de Patinaxe</p></div><span class="cert-date">Certificado oficial</span></div>
+        <div class="cert-item"><div class="cert-logo"><img src="img/logo_trinity.png" alt="Trinity College London"></div><div class="cert-info"><h4>Inglés — Nivel B1</h4><p>Trinity College London</p></div><span class="cert-date">Certificado oficial</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="block" id="contacto">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">06 — Contacto</p>
+        <h2 class="section-title">Hablemos y colaboremos</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Estoy disponible para oportunidades profesionales, prácticas y proyectos de colaboración en los ámbitos de marketing digital, revenue management y tecnología empresarial.</p>
+          <div class="contact-methods">
+            <a href="mailto:sergio.cajide04@gmail.com" class="contact-method">
+              <div class="contact-method-icon">✉</div>
+              <div><p class="contact-method-label">Email</p><p class="contact-method-value">sergio.cajide04@gmail.com</p></div>
+            </a>
+            <a href="tel:+34609332572" class="contact-method">
+              <div class="contact-method-icon">☎</div>
+              <div><p class="contact-method-label">Teléfono</p><p class="contact-method-value">+34 609 332 572</p></div>
+            </a>
+            <div class="contact-method">
+              <div class="contact-method-icon">📍</div>
+              <div><p class="contact-method-label">Ubicación</p><p class="contact-method-value">A Coruña, Galicia</p></div>
+            </div>
+            <a href="https://es.linkedin.com/in/sergio-cajide-g%C3%B3mez-41b924311" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon">in</div>
+              <div><p class="contact-method-label">LinkedIn</p><p class="contact-method-value">Sergio Cajide Gómez</p></div>
+            </a>
+          </div>
+          <div class="availability-box"><span class="avail-dot"></span><p>Disponible para nuevas oportunidades</p></div>
+        </div>
+
+        <div class="contact-form-wrap reveal d1">
+          <h3 class="form-title">Envíame un mensaje</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tu@email.com" required></div>
+            <div class="form-group"><label for="asunto">Asunto</label><input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?"></div>
+            <div class="form-group"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame..." required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+            <p class="form-note">* Este formulario abre tu cliente de email para enviar el mensaje directamente.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOBILE BOTTOM NAV ============ -->
+  <nav class="mobile-bottom-nav">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="herramientas.html">Herramientas</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <footer class="footer">
+    <p>© 2025 Sergio Cajide Gómez · <a href="mailto:sergio.cajide04@gmail.com">sergio.cajide04@gmail.com</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
