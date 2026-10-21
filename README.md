@@ -1,70 +1,64 @@
 # Portfolio — Sergio Cajide Gómez
 
-Portfolio personal desarrollado en HTML, CSS y JavaScript vanilla.  
-Sin dependencias ni frameworks: solo abre los archivos en el navegador.
+Portfolio personal en HTML, CSS y JavaScript sin dependencias ni proceso de compilación.
+Publicado en GitHub Pages: https://sergiocajide04-lang.github.io/Portfolio-Sergio-Cajide_Gomez/
 
-## Estructura de archivos
-
-```
-portfolio/
-├── index.html        → Página de inicio
-├── sobre-mi.html     → Perfil, habilidades e idiomas
-├── experiencia.html  → Trayectoria laboral y académica
-├── proyectos.html    → Proyectos internacionales y certificaciones
-├── contacto.html     → Formulario de contacto e info
-├── style.css         → Estilos compartidos
-├── nav.js            → Menú móvil
-└── README.md         → Este archivo
-```
-
-## Cómo publicarlo en GitHub Pages (paso a paso)
-
-### 1. Crear una cuenta en GitHub
-Ve a [github.com](https://github.com) y regístrate si no tienes cuenta.
-
-### 2. Crear un nuevo repositorio
-- Haz clic en el botón verde **"New"** en el panel izquierdo.
-- Dale el nombre: `portfolio` (o el que quieras).
-- Déjalo en **Public**.
-- Haz clic en **"Create repository"**.
-
-### 3. Subir los archivos
-Una vez creado el repositorio, verás una pantalla vacía.  
-Haz clic en **"uploading an existing file"** (el enlace en el texto de la página).
-
-Arrastra y suelta TODOS los archivos de esta carpeta:
-- index.html
-- sobre-mi.html
-- experiencia.html
-- proyectos.html
-- contacto.html
-- style.css
-- nav.js
-
-Luego haz clic en **"Commit changes"** (botón verde).
-
-### 4. Activar GitHub Pages
-- Ve a la pestaña **Settings** del repositorio.
-- En el menú lateral, haz clic en **Pages**.
-- En **"Branch"**, selecciona `main` y la carpeta `/ (root)`.
-- Haz clic en **Save**.
-
-### 5. Acceder a tu portfolio
-En unos minutos (máximo 2-3), tu portfolio estará en:
+## Estructura
 
 ```
-https://TU_USUARIO.github.io/portfolio/
+├── index.html                 → Página única con los 7 capítulos
+├── style.css                  → Sistema de diseño (tokens en :root) y estilos
+├── app.js                     → Interacciones (menú, tarjetas, visor, cinta, desplegables…)
+├── i18n.js                    → Versión en inglés y selector ES/EN (el HTML está en español)
+├── herramientas.html          → Redirige a index.html#herramientas
+├── sobre-mi.html, experiencia.html, proyectos.html, contacto.html
+│                              → Redirecciones de las URLs antiguas
+├── assets/
+│   ├── documents/
+│   │   ├── CV_Sergio_Cajide_Gomez_ES.pdf / _EN.pdf   → CV por idioma (páginas del original)
+│   │   ├── CV_Sergio_Cajide_Gomez_ES-EN.pdf          → CV original combinado (sin enlazar)
+│   │   ├── TFG_Sergio_Cajide_Gomez.pdf               → Trabajo de Fin de Grado
+│   │   └── certificados/                             → Diplomas originales en PDF
+│   └── img/
+│       ├── foto-sergio.webp / .jpg                   → Retrato optimizado
+│       ├── cv-preview.webp                           → Miniatura del CV
+│       └── certificados/                             → Vistas previas de los diplomas
+├── img/                       → Logotipos (empresas, herramientas, entidades)
+│   ├── tools/                 → Logotipos SVG de Pandas, R, Plotly y Java (Devicon, licencia MIT)
+│   ├── certs/                 → Logotipos de IBM y Google extraídos de los diplomas originales
+│   └── logo_fgp_transparente.png → Copia del emblema de la FGP sin el fondo negro exterior
+├── _backup_pre-rediseno/      → Versión anterior completa y CV antiguo
+└── _backup_original/          → Copia de seguridad previa
 ```
 
-Por ejemplo: `https://sergiocajide.github.io/portfolio/`
+Las carpetas que empiezan por `_` no se publican en GitHub Pages (Jekyll las ignora).
 
-### Actualizar contenido
-Para modificar algo (textos, fotos, etc.):
-1. Edita el archivo HTML correspondiente en tu ordenador.
-2. Ve al repositorio en GitHub.
-3. Haz clic en el archivo → lápiz (editar) → pega el nuevo contenido → **Commit**.
-O bien, sube el archivo de nuevo y GitHub lo reemplazará.
+## Ver en local
 
----
+Desde la carpeta del proyecto:
 
-**Desarrollado con HTML · CSS · JavaScript** — Sin frameworks, sin dependencias.
+```
+python -m http.server 8000
+```
+
+y abre http://localhost:8000. También funciona abriendo `index.html` directamente,
+aunque el portapapeles y algunas funciones del navegador requieren un servidor.
+
+## Actualizar contenido
+
+- **CV:** sustituye `CV_Sergio_Cajide_Gomez_ES.pdf` y `_EN.pdf` manteniendo los nombres;
+  las rutas por idioma están en `i18n.js` (constante `CV`).
+- **Textos:** edita el español en `index.html` y su traducción en `i18n.js` (la clave es el
+  texto español exacto; los bloques con negritas usan `data-i18n`).
+- **Diplomas:** guarda el PDF en `assets/documents/certificados/` y genera una vista previa
+  (`.webp`) en `assets/img/certificados/`. La tarjeta lee la imagen, el PDF y el enlace
+  de verificación de sus atributos `data-diploma-*`.
+- **Herramientas:** la cinta animada (`#toolMarquee`) muestra las principales; el catálogo
+  completo está en `#toolCatalog`, agrupado por área. Para añadir una, crea su `<li class="tool">`
+  en el grupo adecuado (y en la cinta si es principal) y su traducción en `i18n.js`.
+- **Colores, tipografía y espaciado:** variables en `:root`, al inicio de `style.css`.
+
+## Publicar en GitHub Pages
+
+Sube los cambios a la rama configurada en *Settings → Pages* (carpeta raíz). Todas las rutas
+son relativas, así que funcionan dentro del subdirectorio del repositorio.
