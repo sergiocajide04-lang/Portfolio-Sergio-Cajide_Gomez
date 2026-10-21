@@ -25,9 +25,11 @@
     'Proyectos': 'Projects',
     'Contacto': 'Contact',
     'Idioma': 'Language',
-    'Navegación rápida': 'Quick navigation',
-    'Índice': 'Contents',
-    'Cerrar índice': 'Close contents',
+    'Abrir menú': 'Open menu',
+    'Menú': 'Menu',
+    'Cerrar menú': 'Close menu',
+    'Cursos': 'Courses',
+    'TFG': 'Thesis (TFG)',
     'Descargar CV': 'Download CV',
 
     /* Portada */
@@ -142,6 +144,12 @@
     'Ver más información': 'More information',
     'Ver menos': 'Show less',
     'Abrir PDF': 'Open PDF',
+    'Abrir PDF ↗': 'Open PDF ↗',
+    'Abrir el TFG en PDF (se abre en una pestaña nueva)': 'Open the thesis PDF (opens in a new tab)',
+    'Portada del Trabajo de Fin de Grado': 'Cover of the bachelor’s thesis',
+    'periodo analizado': 'period analysed',
+    'comunidades autónomas comparadas': 'Spanish regions compared',
+    'sectores estratégicos': 'strategic sectors',
     '(se abre en una pestaña nueva)': '(opens in a new tab)',
     'Descargar': 'Download',
     'Objetivo': 'Aim',
@@ -157,9 +165,6 @@
     'Galicia avanza hacia una economía cada vez más digital, pero de forma desigual. Tiene tres retos estructurales: retener el talento, aumentar la inversión privada en innovación y reducir el desequilibrio territorial interno.':
       'Galicia is moving towards an increasingly digital economy, but unevenly. It faces three structural challenges: retaining talent, increasing private investment in innovation and reducing its internal territorial imbalance.',
     'Presentado en': 'Presented at',
-    'Mención': 'Specialisation',
-    'Tecnología': 'Technology',
-    'Especialización dentro del Grado en Empresa y Tecnología': 'A specialisation within the Bachelor’s Degree in Business and Technology',
 
     /* Certificaciones */
     'Especialización en datos': 'Data specialisation',

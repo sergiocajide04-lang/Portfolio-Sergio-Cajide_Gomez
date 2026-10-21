@@ -45,27 +45,33 @@
           <button type="button" class="lang-btn" data-lang="es" aria-pressed="true" lang="es" data-i18n-skip>ES<span class="sr-only"> · Español</span></button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en" data-i18n-skip>EN<span class="sr-only"> · English</span></button>
         </div>
+        <button class="menu-btn" type="button" id="menuOpen" aria-haspopup="dialog" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="menu-btn-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- Barra inferior móvil (zona del pulgar) -->
-  <div class="dock" aria-label="Navegación rápida">
-    <button class="dock-btn dock-menu" type="button" id="menuOpen" aria-haspopup="dialog" aria-controls="menu" aria-expanded="false">
-      <span class="dock-icon" aria-hidden="true"><i></i><i></i></span>Índice
-    </button>
-    <a class="dock-btn dock-cv" data-cv href="assets/documents/CV_Sergio_Cajide_Gomez_ES.pdf" download="CV_Sergio_Cajide_Gomez_ES.pdf">Descargar CV</a>
-  </div>
-
   <dialog class="menu" id="menu" aria-labelledby="menuTitle">
     <div class="menu-sheet">
       <div class="menu-head">
-        <p class="menu-title" id="menuTitle">Índice</p>
-        <button class="icon-btn" type="button" data-close-menu aria-label="Cerrar índice">
+        <p class="menu-title" id="menuTitle">Menú</p>
+        <button class="icon-btn" type="button" data-close-menu aria-label="Cerrar menú">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
-      <ul class="menu-list" id="menuList"></ul>
+      <ul class="menu-list" id="menuList">
+        <li><a href="#sobre-mi">Perfil</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#tfg">TFG</a></li>
+        <li><a href="#certificaciones">Certificaciones</a></li>
+        <li><a href="#herramientas">Herramientas</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </div>
   </dialog>
 
@@ -327,9 +333,22 @@
             <p class="degree-minor">Mención en Tecnología</p>
             <p class="degree-text">El grado combina la gestión de empresas con las tecnologías de la información. Dentro de él cursé la mención en Tecnología.</p>
             <p class="pill">Graduado · julio de 2026</p>
+          </div>
 
-            <!-- Trabajo de Fin de Grado -->
-            <div class="tfg">
+            <!-- Trabajo de Fin de Grado: columna derecha en escritorio -->
+            <div class="tfg" id="tfg">
+              <div class="tfg-visual">
+                <a class="tfg-cover" href="assets/documents/TFG_Sergio_Cajide_Gomez.pdf" target="_blank" rel="noopener" aria-label="Abrir el TFG en PDF (se abre en una pestaña nueva)">
+                  <span class="tfg-sheet tfg-sheet--back" aria-hidden="true"><img src="assets/img/tfg-page2.webp" width="745" height="1053" alt="" loading="lazy"></span>
+                  <span class="tfg-sheet tfg-sheet--front"><img src="assets/img/tfg-cover.webp" width="745" height="1053" alt="Portada del Trabajo de Fin de Grado" loading="lazy"></span>
+                  <span class="tfg-cover-hint" aria-hidden="true">Abrir PDF ↗</span>
+                </a>
+                <ul class="tfg-facts">
+                  <li><span class="tfg-fact-value tabular">2014–2024</span><span class="tfg-fact-label">periodo analizado</span></li>
+                  <li><span class="tfg-fact-value tabular">17</span><span class="tfg-fact-label">comunidades autónomas comparadas</span></li>
+                  <li><span class="tfg-fact-value tabular">4</span><span class="tfg-fact-label">sectores estratégicos</span></li>
+                </ul>
+              </div>
               <p class="tfg-label">Trabajo de Fin de Grado (TFG)</p>
               <h4 class="tfg-title" lang="gl">O impacto da tecnoloxía no desenvolvemento económico de Galicia</h4>
               <p class="tfg-text">Parte de una pregunta: ¿está preparada Galicia para competir como una de las regiones tecnológicas de referencia en España? Analizo cómo la transformación digital influye en su desarrollo económico entre 2014 y 2024.</p>
@@ -353,12 +372,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="degree-mention">
-            <p class="degree-mention-label">Mención</p>
-            <p class="degree-mention-name">Tecnología</p>
-            <p class="degree-mention-note">Especialización dentro del Grado en Empresa y Tecnología</p>
-          </div>
         </article>
       </div>
     </section>

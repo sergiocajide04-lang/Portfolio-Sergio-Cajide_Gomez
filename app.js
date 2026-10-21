@@ -44,13 +44,10 @@
     const menu = $('#menu');
     const openBtn = $('#menuOpen');
     const list = $('#menuList');
-    const source = $('#navList');
-    if (!menu || !openBtn || !list || !source || typeof menu.showModal !== 'function') {
+    if (!menu || !openBtn || !list || typeof menu.showModal !== 'function') {
       if (openBtn) openBtn.hidden = true;
       return;
     }
-
-    list.innerHTML = source.innerHTML;
 
     const close = () => { if (menu.open) menu.close(); };
 
@@ -79,6 +76,15 @@
 
   /* Desplaza a una sección y le pasa el foco sin un segundo salto */
   function goTo(target, hash) {
+    // Si el destino está dentro de un bloque aún sin aparecer, se muestra ya: su
+    // desplazamiento de entrada movería el destino mientras llegamos
+    const pending = target.closest('.reveal:not(.is-in)');
+    if (pending) {
+      pending.style.transition = 'none';
+      pending.classList.add('is-in');
+      void pending.offsetWidth;
+      pending.style.transition = '';
+    }
     window.requestAnimationFrame(() => {
       target.scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth', block: 'start' });
       if (hash) history.pushState(null, '', hash);
@@ -503,6 +509,24 @@
     io.observe(panel);
   }
 
+  /* ---------- Portada del TFG: ligera inclinación 3D con el ratón ---------- */
+  function initTfgTilt() {
+    const cover = $('.tfg-cover');
+    if (!cover || reduceMotion.matches || !window.matchMedia('(pointer: fine)').matches) return;
+    const front = $('.tfg-sheet--front', cover);
+    cover.addEventListener('pointermove', (event) => {
+      const r = cover.getBoundingClientRect();
+      const x = (event.clientX - r.left) / r.width - 0.5;
+      const y = (event.clientY - r.top) / r.height - 0.5;
+      front.style.setProperty('--ry', (x * 16).toFixed(2) + 'deg');
+      front.style.setProperty('--rx', (-y * 16).toFixed(2) + 'deg');
+    });
+    cover.addEventListener('pointerleave', () => {
+      front.style.removeProperty('--rx');
+      front.style.removeProperty('--ry');
+    });
+  }
+
   /* ---------- Cinta de herramientas ---------- */
   function initMarquee() {
     const marquee = $('#toolMarquee');
@@ -543,6 +567,7 @@
   initCopyEmail();
   initContactForm();
   initSkills();
+  initTfgTilt();
   initMarquee();
   initYear();
   // El idioma se aplica al final, cuando ya existen los elementos clonados (menú, cinta)
