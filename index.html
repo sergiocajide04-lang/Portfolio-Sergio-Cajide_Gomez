@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sergio Cajide Gómez — Negocio, datos y tecnología</title>
+  <meta name="description" content="Portfolio de Sergio Cajide Gómez. Graduado en Empresa y Tecnología (USC, mención en Tecnología), con prácticas en revenue management y marketing digital, y certificaciones en ciencia y análisis de datos.">
+  <meta name="theme-color" content="#f1eee6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sergio Cajide Gómez — Negocio, datos y tecnología">
+  <meta property="og:description" content="Empresa y Tecnología, revenue management, marketing digital y análisis de datos.">
+  <meta property="og:url" content="https://sergiocajide04-lang.github.io/Portfolio-Sergio-Cajide_Gomez/">
+  <meta property="og:image" content="https://sergiocajide04-lang.github.io/Portfolio-Sergio-Cajide_Gomez/assets/img/foto-sergio.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23151614'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='40' font-style='italic' fill='%23c9f04d'%3ES%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Schibsted+Grotesk:wght@400..700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ CABECERA ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="progress" aria-hidden="true"><span class="progress-bar" id="progressBar"></span></div>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Sergio Cajide Gómez, volver al inicio">
+        <span class="brand-name">Sergio Cajide <em>Gómez</em></span>
+      </a>
+      <nav class="nav" aria-label="Secciones">
+        <ul class="nav-list" id="navList">
+          <li><a href="#sobre-mi">Perfil</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#certificaciones">Certificaciones</a></li>
+          <li><a href="#herramientas">Herramientas</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <div class="lang-switch" role="group" aria-label="Idioma">
+          <button type="button" class="lang-btn" data-lang="es" aria-pressed="true" lang="es" data-i18n-skip>ES<span class="sr-only"> · Español</span></button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en" data-i18n-skip>EN<span class="sr-only"> · English</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Barra inferior móvil (zona del pulgar) -->
+  <div class="dock" aria-label="Navegación rápida">
+    <button class="dock-btn dock-menu" type="button" id="menuOpen" aria-haspopup="dialog" aria-controls="menu" aria-expanded="false">
+      <span class="dock-icon" aria-hidden="true"><i></i><i></i></span>Índice
+    </button>
+    <a class="dock-btn dock-cv" data-cv href="assets/documents/CV_Sergio_Cajide_Gomez_ES.pdf" download="CV_Sergio_Cajide_Gomez_ES.pdf">Descargar CV</a>
+  </div>
+
+  <dialog class="menu" id="menu" aria-labelledby="menuTitle">
+    <div class="menu-sheet">
+      <div class="menu-head">
+        <p class="menu-title" id="menuTitle">Índice</p>
+        <button class="icon-btn" type="button" data-close-menu aria-label="Cerrar índice">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <ul class="menu-list" id="menuList"></ul>
+    </div>
+  </dialog>
+
+  <main id="main">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="top" aria-labelledby="heroName">
+      <div class="wrap hero-grid">
+        <div class="hero-meta">
+          <p>A Coruña, Galicia</p>
+          <p class="hide-sm">Empresa y Tecnología · USC</p>
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Disponible para nuevas oportunidades</p>
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-kicker">Data Science · Data Analytics · Transformación digital</p>
+          <h1 class="hero-name" id="heroName">
+            <span class="hero-name-line">Sergio</span>
+            <span class="hero-name-line">Cajide <em class="nowrap">Gómez</em></span>
+          </h1>
+          <p class="hero-headline" data-i18n="hero.headline">Leo el negocio <span class="marker">a través de sus datos.</span></p>
+          <p class="hero-lede">Graduado en Empresa y Tecnología, con prácticas en revenue management y marketing digital. Ahora, especializándome en análisis y ciencia de datos.</p>
+          <div class="hero-actions">
+            <a class="btn btn--accent" href="#experiencia">Ver experiencia</a>
+            <a class="btn btn--line" data-cv href="assets/documents/CV_Sergio_Cajide_Gomez_ES.pdf" download="CV_Sergio_Cajide_Gomez_ES.pdf">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
+              Descargar CV <span class="btn-note">PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <picture>
+            <source srcset="assets/img/foto-sergio.webp" type="image/webp">
+            <img src="assets/img/foto-sergio.jpg" width="900" height="900" alt="Retrato de Sergio Cajide Gómez, sentado con las manos entrelazadas" fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PERFIL ============ -->
+    <section class="chapter" id="sobre-mi" aria-labelledby="t-perfil">
+      <div class="wrap">
+        <div class="profile">
+          <div class="profile-text">
+            <header class="chapter-head reveal">
+              <p class="kicker">Perfil</p>
+              <h2 class="chapter-title" id="t-perfil" data-i18n="title.perfil">Empresa, tecnología <em>y datos</em></h2>
+            </header>
+            <p class="profile-lead reveal">Me interesa cómo los datos y la tecnología ayudan a entender un negocio y a tomar mejores decisiones.</p>
+            <div class="profile-body reveal">
+              <p data-i18n="profile.p1">Estudié el <strong>Grado en Empresa y Tecnología</strong> en la Universidad de Santiago de Compostela, con <strong>mención en Tecnología</strong>. En 2026 hice dos prácticas: en <strong>revenue management</strong>, analizando reservas, ocupación y demanda para hoteles, y en <strong>marketing digital</strong>, midiendo tráfico web, keywords y campañas.</p>
+              <p data-i18n="profile.p2">Ese mismo año completé los certificados profesionales de <strong>IBM Data Science</strong> y <strong>Google Advanced Data Analytics</strong>, y ahora preparo la certificación <strong>Microsoft PL-300</strong> de Power BI. Sigo formándome en análisis de datos y machine learning.</p>
+              <p data-i18n="profile.p3">Fuera del trabajo, entreno en el Hockey Club Riazor y arbitro partidos de competiciones regionales de hockey sobre patines.</p>
+            </div>
+            <p class="profile-links reveal">
+              <a class="link" href="#habilidades">Habilidades</a>
+              <a class="link" href="#experiencia">Experiencia</a>
+              <a class="link" href="#certificaciones">Certificaciones</a>
+              <a class="link" href="#herramientas">Herramientas</a>
+            </p>
+          </div>
+
+          <aside class="factsheet reveal" aria-label="Ficha">
+            <p class="factsheet-title">Ficha</p>
+            <dl>
+              <div><dt>Base</dt><dd>A Coruña, Galicia</dd></div>
+              <div><dt>Formación</dt><dd>Grado en Empresa y Tecnología, mención en Tecnología · USC · <span class="tabular">2022–2026</span></dd></div>
+              <div><dt>Enfoque</dt><dd>Data Analytics · Data Science · Transformación digital</dd></div>
+              <div>
+                <dt>Idiomas</dt>
+                <dd>
+                  <ul class="langs">
+                    <li><span>Español</span><span>Nativo</span></li>
+                    <li><span>Gallego</span><span>Nativo</span></li>
+                    <li><span>Inglés</span><span>B2 · Trinity College London</span></li>
+                    <li><span>Portugués</span><span>Básico</span></li>
+                  </ul>
+                </dd>
+              </div>
+              <div><dt>Además</dt><dd>Carné de conducir B</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HABILIDADES ============ -->
+    <section class="chapter" id="habilidades" aria-labelledby="t-skills">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Habilidades</p>
+          <h2 class="chapter-title" id="t-skills" data-i18n="title.skills">Habilidades <em>principales</em></h2>
+        </header>
+
+        <div class="skills-panel reveal" id="skillsPanel">
+          <div class="skills-top">
+            <p class="skills-stat"><span class="skills-count" data-i18n-skip>20</span><span class="skills-stat-label">habilidades en 4 áreas</span></p>
+          </div>
+        <div class="skillset-grid">
+          <div class="skillset-group">
+            <p class="skillset-head">Análisis de datos</p>
+            <ul class="chips" role="list"><li>Limpieza de datos</li><li>Análisis exploratorio (EDA)</li><li>Análisis de correlación</li><li>KPIs</li><li>Forecasting</li><li>Visualización interactiva</li></ul>
+          </div>
+          <div class="skillset-group">
+            <p class="skillset-head">Machine learning</p>
+            <ul class="chips" role="list"><li>Regresión logística</li><li>Árboles de decisión</li><li>Aprendizaje no supervisado</li><li>Evaluación de modelos</li><li>IA generativa</li></ul>
+          </div>
+          <div class="skillset-group">
+            <p class="skillset-head">Negocio</p>
+            <ul class="chips" role="list"><li>Análisis de negocio</li><li>Decisiones basadas en datos</li><li>Transformación digital</li><li>Gestión de proyectos</li></ul>
+          </div>
+          <div class="skillset-group">
+            <p class="skillset-head">Competencias</p>
+            <ul class="chips" role="list"><li>Liderazgo</li><li>Comunicación</li><li>Resolución de problemas</li><li>Trabajo en equipo</li><li>Creatividad</li></ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section class="chapter" id="experiencia" aria-labelledby="t-exp">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Experiencia</p>
+          <h2 class="chapter-title" id="t-exp" data-i18n="title.exp">Experiencia <em>profesional</em></h2>
+        </header>
+
+        <div class="jobs">
+          <article class="job reveal" id="exp-overfly" aria-labelledby="job-overfly">
+            <div class="job-logo">
+              <img class="logo-badge" src="img/logo_overfly.png" width="120" height="120" alt="Logotipo de Overfly Consulting" loading="lazy">
+            </div>
+            <div class="job-main">
+              <p class="job-meta"><span class="tabular">Mar — Jun 2026</span><span>Vilagarcía de Arousa</span><span>Prácticas</span></p>
+              <h3 class="job-role" id="job-overfly">Marketing Digital</h3>
+              <p class="job-company">Overfly Consulting</p>
+              <p class="job-lede">Análisis de tráfico, keywords y campañas para clientes del sector hotelero.</p>
+              <button class="disclosure" type="button" aria-expanded="false" aria-controls="det-overfly">
+                <span class="disclosure-label" data-i18n-skip>Funciones</span>
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <div class="job-detail" id="det-overfly">
+                <div class="job-detail-inner">
+                  <ul class="ticks">
+                    <li>Análisis de métricas de tráfico y rendimiento web con Google Analytics y Semrush para medir el impacto de contenidos y campañas.</li>
+                    <li>Análisis de keywords y benchmarking de la competencia en el sector hotelero para detectar oportunidades de crecimiento.</li>
+                    <li>Seguimiento de KPIs de campañas SEO y SEM y propuesta de mejoras basadas en datos para captar tráfico cualificado.</li>
+                    <li>Colaboración en desarrollo web para mejorar la estructura, la usabilidad y el rendimiento de los sitios.</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="tags" aria-label="Herramientas y áreas">
+                <li>Google Analytics</li><li>Semrush</li><li>SEO · SEM</li><li>KPIs</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job reveal" id="exp-newlink" aria-labelledby="job-newlink">
+            <div class="job-logo">
+              <img class="logo-wordmark" src="img/logo_newlink_transparente.png" width="187" height="48" alt="Logotipo de Newlink" loading="lazy">
+            </div>
+            <div class="job-main">
+              <p class="job-meta"><span class="tabular">Feb — Jun 2026</span><span>Madrid</span><span>Prácticas</span></p>
+              <h3 class="job-role" id="job-newlink">Revenue Management</h3>
+              <p class="job-company">Globally by Newlink <span class="muted">(Newlink Spain)</span></p>
+              <p class="job-lede">Análisis de reservas, ocupación y demanda para apoyar el pricing de hoteles: pick-ups, forecast e informes.</p>
+              <button class="disclosure" type="button" aria-expanded="false" aria-controls="det-newlink">
+                <span class="disclosure-label" data-i18n-skip>Funciones</span>
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+              <div class="job-detail" id="det-newlink">
+                <div class="job-detail-inner">
+                  <ul class="ticks">
+                    <li>Análisis de datos de reservas, ocupación y demanda para apoyar las estrategias de pricing y optimizar ingresos.</li>
+                    <li>Elaboración y seguimiento de pick-ups y forecast de demanda.</li>
+                    <li>Benchmarking de la competencia y revisión de KPIs para detectar oportunidades de mejora en pricing y forecasting.</li>
+                    <li>Elaboración de informes para la toma de decisiones estratégicas basadas en datos.</li>
+                    <li>Gestión de datos de disponibilidad, tarifas e inventario en PMS y channel managers (SiteMinder, Prestige, Ulyses).</li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="tags" aria-label="Herramientas y áreas">
+                <li>Pick-ups</li><li>Forecast</li><li>Pricing</li><li>SiteMinder</li><li>Prestige</li><li>Ulyses</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Deporte -->
+        <div class="sport reveal" id="exp-hockey">
+          <div class="sport-head">
+            <h3 class="sport-title">Hockey sobre patines</h3>
+            <p class="job-meta"><span class="tabular">Ene 2022 — actualidad</span><span>Galicia</span></p>
+          </div>
+          <div class="sport-roles">
+            <article class="sport-role" aria-labelledby="role-coach">
+              <img class="sport-logo" src="img/logo_riazor.png" width="171" height="294" alt="Escudo del Hockey Club Riazor" loading="lazy">
+              <div>
+                <h4 class="sport-role-title" id="role-coach">Entrenador</h4>
+                <p class="sport-org">Hockey Club Riazor</p>
+                <p>Preparo y dirijo los entrenamientos del equipo y lo acompaño en los partidos.</p>
+                <button class="disclosure disclosure--sm" type="button" aria-expanded="false" aria-controls="det-coach">
+                  <span class="disclosure-label" data-i18n-skip>Funciones</span>
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <div class="job-detail" id="det-coach">
+                  <div class="job-detail-inner">
+                    <ul class="ticks">
+                      <li>Planificación y desarrollo de las sesiones de entrenamiento.</li>
+                      <li>Trabajo de los aspectos técnicos y tácticos del hockey sobre patines.</li>
+                      <li>Dirección del equipo en los partidos y seguimiento de la evolución de cada jugador y del grupo.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="sport-role" aria-labelledby="role-ref">
+              <img class="sport-logo sport-logo--round" src="img/logo_fgp_blanco.png" width="221" height="220" alt="Emblema de la Federación Galega de Patinaxe" loading="lazy">
+              <div>
+                <h4 class="sport-role-title" id="role-ref">Árbitro</h4>
+                <p class="sport-org">Federación Galega de Patinaxe</p>
+                <p>Arbitro partidos de competiciones regionales de hockey sobre patines.</p>
+                <button class="disclosure disclosure--sm" type="button" aria-expanded="false" aria-controls="det-ref">
+                  <span class="disclosure-label" data-i18n-skip>Funciones</span>
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <div class="job-detail" id="det-ref">
+                  <div class="job-detail-inner">
+                    <ul class="ticks">
+                      <li>Arbitraje de los partidos y aplicación del reglamento con imparcialidad.</li>
+                      <li>Seguimiento del desarrollo del encuentro y toma de decisiones en pista, bajo presión.</li>
+                      <li>Comunicación con los participantes y gestión de conflictos para el correcto desarrollo de la competición.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMACIÓN ============ -->
+    <section class="chapter" id="formacion" aria-labelledby="t-form">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Formación</p>
+          <h2 class="chapter-title" id="t-form" data-i18n="title.form">Formación <em>académica</em></h2>
+        </header>
+
+        <article class="degree reveal" aria-labelledby="degreeTitle">
+          <div class="degree-main">
+            <img class="degree-logo" src="img/logo_usc.png" width="130" height="80" alt="Logotipo de la Universidad de Santiago de Compostela" loading="lazy">
+            <p class="degree-years tabular">2022 — 2026</p>
+            <h3 class="degree-title" id="degreeTitle">Grado en Empresa y Tecnología</h3>
+            <p class="degree-place">Universidade de Santiago de Compostela · Campus de Lugo</p>
+            <p class="degree-minor">Mención en Tecnología</p>
+            <p class="degree-text">El grado combina la gestión de empresas con las tecnologías de la información. Dentro de él cursé la mención en Tecnología.</p>
+            <p class="pill">Graduado · julio de 2026</p>
+
+            <!-- Trabajo de Fin de Grado -->
+            <div class="tfg">
+              <p class="tfg-label">Trabajo de Fin de Grado (TFG)</p>
+              <h4 class="tfg-title" lang="gl">O impacto da tecnoloxía no desenvolvemento económico de Galicia</h4>
+              <p class="tfg-text">Parte de una pregunta: ¿está preparada Galicia para competir como una de las regiones tecnológicas de referencia en España? Analizo cómo la transformación digital influye en su desarrollo económico entre 2014 y 2024.</p>
+              <div class="tfg-actions">
+                <button class="disclosure disclosure--sm" type="button" aria-expanded="false" aria-controls="det-tfg">
+                  <span class="disclosure-label" data-i18n-skip data-open-label="Ver menos">Ver más información</span>
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <a class="link" href="assets/documents/TFG_Sergio_Cajide_Gomez.pdf" target="_blank" rel="noopener">Abrir PDF<span class="sr-only"> (se abre en una pestaña nueva)</span> <span aria-hidden="true">↗</span></a>
+                <a class="link" href="assets/documents/TFG_Sergio_Cajide_Gomez.pdf" download="TFG_Sergio_Cajide_Gomez.pdf">Descargar <span aria-hidden="true">↓</span></a>
+              </div>
+              <div class="job-detail" id="det-tfg">
+                <div class="job-detail-inner">
+                  <dl class="tfg-details">
+                    <div><dt>Objetivo</dt><dd>Analizar la evolución de la digitalización y de los principales indicadores tecnológicos de Galicia entre 2014 y 2024, su relación con el desarrollo económico regional y su posición frente al resto de comunidades autónomas.</dd></div>
+                    <div><dt>Método</dt><dd>Enfoque descriptivo-comparativo con fuentes oficiales (INE, ONTSI, IGE y AMTEGA-OSIMGA). Incluye una explotación propia de los microdatos de la Encuesta sobre Innovación en las Empresas del INE para construir la serie 2014–2024 de intensidad innovadora de las 17 comunidades.</dd></div>
+                    <div><dt>Qué estudia</dt><dd>El hipersector TIC gallego, la adopción tecnológica de las empresas, los sectores estratégicos (automoción, textil, naval y agroalimentario-pesquero) y la comparación con Madrid, Cataluña, País Vasco, Andalucía y la Comunidad Valenciana.</dd></div>
+                    <div><dt>Conclusiones</dt><dd>Galicia avanza hacia una economía cada vez más digital, pero de forma desigual. Tiene tres retos estructurales: retener el talento, aumentar la inversión privada en innovación y reducir el desequilibrio territorial interno.</dd></div>
+                    <div><dt>Presentado en</dt><dd>Facultade de Administración e Dirección de Empresas · Universidade de Santiago de Compostela</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="degree-mention">
+            <p class="degree-mention-label">Mención</p>
+            <p class="degree-mention-name">Tecnología</p>
+            <p class="degree-mention-note">Especialización dentro del Grado en Empresa y Tecnología</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICACIONES EN DATOS ============ -->
+    <section class="chapter chapter--dark" id="certificaciones" aria-labelledby="t-cert">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Especialización en datos</p>
+          <h2 class="chapter-title" id="t-cert" data-i18n="title.cert">Certificaciones en <em>datos y analítica</em></h2>
+          <p class="chapter-lead">Pulsa una tarjeta para ver su reverso. Los diplomas de IBM y Google se pueden ampliar y verificar en Coursera.</p>
+        </header>
+
+        <ul class="certs">
+          <li class="cert cert--diploma reveal" data-flip
+              data-diploma-title="IBM Data Science Professional Certificate"
+              data-diploma-src="assets/img/certificados/ibm-data-science.webp"
+              data-diploma-alt="Diploma del Certificado Profesional IBM Data Science otorgado a Sergio Cajide Gómez el 29 de septiembre de 2026 a través de Coursera, con la lista de los 12 cursos completados."
+              data-diploma-pdf="assets/documents/certificados/IBM_Data_Science_Professional_Certificate.pdf"
+              data-diploma-verify="https://coursera.org/verify/professional-cert/7M49G5LONFND">
+            <div class="cert-inner">
+              <div class="cert-face cert-front">
+                <button class="cert-thumb" type="button" data-open-viewer aria-label="Ampliar el diploma IBM Data Science Professional Certificate">
+                  <img src="assets/img/certificados/ibm-data-science-thumb.webp" width="792" height="612" alt="" loading="lazy">
+                  <span class="cert-thumb-hint" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>Ampliar</span>
+                </button>
+                <div class="cert-info">
+                  <p class="cert-status cert-status--done">Completado</p>
+                  <img class="cert-issuer-logo" src="img/certs/ibm-logo.png" width="424" height="170" alt="IBM">
+                  <h3 class="cert-title">IBM Data Science Professional Certificate</h3>
+                  <p class="cert-meta"><span>12 cursos · Coursera</span><time datetime="2026-09-29">29 sep 2026</time></p>
+                </div>
+                <button class="cert-flip" type="button" aria-expanded="false">Ver cursos <span aria-hidden="true">↻</span></button>
+              </div>
+              <div class="cert-face cert-back" tabindex="-1" aria-label="Detalles: IBM Data Science Professional Certificate">
+                <p class="cert-back-kicker">IBM Data Science</p>
+                <p class="cert-back-text">Ciencia de datos y machine learning: metodología, Python y SQL, análisis y visualización de datos, modelos de machine learning y un proyecto final.</p>
+                <p class="cert-back-label">Cursos del diploma</p>
+                <ul class="cert-courses">
+                  <li>What is Data Science?</li><li>Tools for Data Science</li><li>Data Science Methodology</li><li>Python for Data Science, AI &amp; Development</li><li>Python Project for Data Science</li><li>Databases and SQL for Data Science with Python</li><li>Data Analysis with Python</li><li>Data Visualization with Python</li><li>Machine Learning with Python</li><li>Applied Data Science Capstone</li><li>Generative AI: Elevate Your Data Science Career</li><li>Data Scientist Career Guide and Interview Preparation</li>
+                </ul>
+                <div class="cert-actions">
+                  <button class="btn btn--accent btn--sm" type="button" data-open-viewer>Ver diploma</button>
+                  <a class="link link--light" href="https://coursera.org/verify/professional-cert/7M49G5LONFND" target="_blank" rel="noopener">Verificar en Coursera<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+                  <button class="cert-unflip" type="button"><span aria-hidden="true">←</span> Volver</button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="cert cert--diploma reveal" data-flip
+              data-diploma-title="Google Advanced Data Analytics Professional Certificate"
+              data-diploma-src="assets/img/certificados/google-advanced-data-analytics.webp"
+              data-diploma-alt="Diploma del Certificado Profesional Google Advanced Data Analytics otorgado a Sergio Cajide Gómez el 9 de octubre de 2026 a través de Coursera, con la lista de los 7 cursos completados."
+              data-diploma-pdf="assets/documents/certificados/Google_Advanced_Data_Analytics_Professional_Certificate.pdf"
+              data-diploma-verify="https://coursera.org/verify/professional-cert/T1CQBRA9M9ZZ">
+            <div class="cert-inner">
+              <div class="cert-face cert-front">
+                <button class="cert-thumb" type="button" data-open-viewer aria-label="Ampliar el diploma Google Advanced Data Analytics Professional Certificate">
+                  <img src="assets/img/certificados/google-advanced-data-analytics-thumb.webp" width="792" height="612" alt="" loading="lazy">
+                  <span class="cert-thumb-hint" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>Ampliar</span>
+                </button>
+                <div class="cert-info">
+                  <p class="cert-status cert-status--done">Completado</p>
+                  <img class="cert-issuer-logo cert-issuer-logo--g" src="img/certs/google-logo.png" width="393" height="401" alt="Google">
+                  <h3 class="cert-title">Google Advanced Data Analytics Professional Certificate</h3>
+                  <p class="cert-meta"><span>7 cursos · Coursera</span><time datetime="2026-10-09">9 oct 2026</time></p>
+                </div>
+                <button class="cert-flip" type="button" aria-expanded="false">Ver cursos <span aria-hidden="true">↻</span></button>
+              </div>
+              <div class="cert-face cert-back" tabindex="-1" aria-label="Detalles: Google Advanced Data Analytics Professional Certificate">
+                <p class="cert-back-kicker">Google Advanced Data Analytics</p>
+                <p class="cert-back-text">Analítica avanzada con evaluaciones prácticas: exploración de grandes conjuntos de datos, estadística, regresión, machine learning y modelado predictivo, con un proyecto final.</p>
+                <p class="cert-back-label">Cursos del diploma</p>
+                <ul class="cert-courses">
+                  <li>Foundations of Data Science</li><li>Go Beyond the Numbers: Translate Data into Insights</li><li>The Power of Statistics</li><li>Regression Analysis: Simplify Complex Data Relationships</li><li>The Nuts and Bolts of Machine Learning</li><li>Google Advanced Data Analytics Capstone</li><li>Accelerate Your Job Search with AI</li>
+                </ul>
+                <div class="cert-actions">
+                  <button class="btn btn--accent btn--sm" type="button" data-open-viewer>Ver diploma</button>
+                  <a class="link link--light" href="https://coursera.org/verify/professional-cert/T1CQBRA9M9ZZ" target="_blank" rel="noopener">Verificar en Coursera<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+                  <button class="cert-unflip" type="button"><span aria-hidden="true">←</span> Volver</button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="cert cert--type reveal" data-flip>
+            <div class="cert-inner">
+              <div class="cert-face cert-front">
+                <div class="cert-badge">
+                  <img src="img/certs/pl300-badge.png" width="324" height="335" alt="Insignia de la certificación Microsoft Certified: Power BI Data Analyst Associate, que estoy preparando" loading="lazy">
+                </div>
+                <div class="cert-info">
+                  <p class="cert-status">En curso</p>
+                  <p class="cert-issuer-text">Microsoft</p>
+                  <h3 class="cert-title">Microsoft Certified: Power BI Data Analyst Associate</h3>
+                  <p class="cert-meta"><span>Examen PL-300</span><span>Preparándolo actualmente</span></p>
+                </div>
+                <button class="cert-flip" type="button" aria-expanded="false">Detalles <span aria-hidden="true">↻</span></button>
+              </div>
+              <div class="cert-face cert-back" tabindex="-1" aria-label="Detalles: Microsoft Certified Power BI Data Analyst Associate">
+                <p class="cert-back-kicker">Microsoft · PL-300</p>
+                <p class="cert-back-text">Certificación de Microsoft para analistas de datos que trabajan con Power BI: preparar y modelar datos, y construir visualizaciones e informes para analizarlos.</p>
+                <p class="cert-back-note">Estado: en curso. Estoy preparando el examen PL-300; todavía no he obtenido la certificación.</p>
+                <div class="cert-actions">
+                  <button class="cert-unflip" type="button"><span aria-hidden="true">←</span> Volver</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HERRAMIENTAS ============ -->
+    <section class="chapter" id="herramientas" aria-labelledby="t-tools">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Herramientas</p>
+          <h2 class="chapter-title" id="t-tools" data-i18n="title.tools">Herramientas <em>y tecnologías</em></h2>
+          <p class="chapter-lead">Las herramientas que utilizo.</p>
+        </header>
+
+        <div class="marquee reveal" id="toolMarquee">
+          <div class="marquee-viewport">
+            <ul class="marquee-track" aria-label="Herramientas principales">
+              <li class="marquee-item"><img src="img/logo_python.png" width="70" height="70" alt="" loading="lazy"><span>Python</span></li>
+              <li class="marquee-item"><img src="img/tools/pandas.svg" width="40" height="40" alt="" loading="lazy"><span>Pandas</span></li>
+              <li class="marquee-item"><img src="img/tools/sql.png" width="306" height="160" alt="" loading="lazy"><span>SQL</span></li>
+              <li class="marquee-item"><img src="img/tools/r.svg" width="40" height="40" alt="" loading="lazy"><span>R</span></li>
+              <li class="marquee-item"><img src="img/tools/plotly.svg" width="40" height="40" alt="" loading="lazy"><span>Plotly</span></li>
+              <li class="marquee-item"><img src="img/tools/powerbi.png" width="121" height="160" alt="" loading="lazy"><span>Power BI</span></li>
+              <li class="marquee-item"><img src="img/logo_excel.png" width="70" height="70" alt="" loading="lazy"><span>Excel</span></li>
+              <li class="marquee-item"><img src="img/tools/java.svg" width="40" height="40" alt="" loading="lazy"><span>Java</span></li>
+              <li class="marquee-item"><img src="img/logo_html.png" width="60" height="60" alt="" loading="lazy"><span>HTML</span></li>
+              <li class="marquee-item"><img src="img/logo_css.png" width="60" height="60" alt="" loading="lazy"><span>CSS</span></li>
+              <li class="marquee-item"><img src="img/tools/javascript.png" width="211" height="240" alt="" loading="lazy"><span>JavaScript</span></li>
+              <li class="marquee-item"><img src="img/logo_vscode.png" width="80" height="80" alt="" loading="lazy"><span>VS Code</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="catalog">
+          <button class="disclosure" type="button" aria-expanded="false" aria-controls="toolCatalog">
+            <span class="disclosure-label" data-i18n-skip data-open-label="Ocultar herramientas">Ver todas las herramientas</span>
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="job-detail" id="toolCatalog">
+            <div class="job-detail-inner">
+        <div class="skills">
+          <section class="skill-group" aria-labelledby="sg-datos">
+            <h3 class="skill-group-title" id="sg-datos">Programación y análisis de datos</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo"><img src="img/logo_python.png" width="70" height="70" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Python</span><span class="tool-use">Análisis de datos y machine learning</span><span class="tool-where">IBM Data Science</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/tools/pandas.svg" width="40" height="40" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Pandas</span><span class="tool-use">Limpieza y análisis exploratorio</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/tools/sql.png" width="306" height="160" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">SQL</span><span class="tool-use">Consultas a bases de datos</span><span class="tool-where">IBM Data Science</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/tools/r.svg" width="40" height="40" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">R</span><span class="tool-use">Análisis estadístico</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/tools/plotly.svg" width="40" height="40" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Plotly</span><span class="tool-use">Visualización interactiva</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/tools/java.svg" width="40" height="40" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Java</span><span class="tool-use">Programación orientada a objetos</span></span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="sg-bi">
+            <h3 class="skill-group-title" id="sg-bi">Business intelligence y hojas de cálculo</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo"><img src="img/tools/powerbi.png" width="121" height="160" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Microsoft Power BI</span><span class="tool-use">Modelado de datos e informes</span><span class="tool-where">Preparando la certificación PL-300</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/logo_excel.png" width="70" height="70" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Microsoft Excel</span><span class="tool-use">Análisis de datos y modelos de gestión</span></span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="sg-mkt">
+            <h3 class="skill-group-title" id="sg-mkt">Marketing digital y analítica web</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/logo_googleanalytics.png" width="140" height="48" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Google Analytics</span><span class="tool-use">Tráfico y comportamiento de usuarios</span><span class="tool-where">Prácticas en Overfly</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/logo_semrush.png" width="70" height="70" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Semrush</span><span class="tool-use">SEO, keywords y competencia</span><span class="tool-where">Prácticas en Overfly</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/logo_canva.png" width="120" height="45" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Canva</span><span class="tool-use">Diseño de contenido digital</span></span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="sg-hotel">
+            <h3 class="skill-group-title" id="sg-hotel">Revenue management y sistemas hoteleros</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/logo_siteminder.png" width="150" height="50" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">SiteMinder</span><span class="tool-use">Channel manager: tarifas y distribución</span><span class="tool-where">Prácticas en Newlink</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/logo_prestige.png" width="150" height="44" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Prestige</span><span class="tool-use">Gestión operativa y reservas</span><span class="tool-where">Prácticas en Newlink</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/tools/ulyses.png" width="468" height="120" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Ulyses</span><span class="tool-use">Disponibilidad, tarifas e inventario</span><span class="tool-where">Prácticas en Newlink</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/tools/opera.png" width="292" height="120" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">OPERA PMS</span><span class="tool-use">Reservas y operaciones hoteleras</span></span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="sg-web">
+            <h3 class="skill-group-title" id="sg-web">Desarrollo web</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo"><img src="img/logo_html.png" width="60" height="60" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">HTML</span><span class="tool-use">Estructura de páginas web</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/logo_css.png" width="60" height="60" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">CSS</span><span class="tool-use">Diseño y maquetación responsive</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/tools/javascript.png" width="211" height="240" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">JavaScript</span><span class="tool-use">Interactividad web, como la de este portfolio</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/logo_vscode.png" width="80" height="80" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">VS Code</span><span class="tool-use">Proyectos web y de Python</span></span></li>
+            </ul>
+          </section>
+
+          <section class="skill-group" aria-labelledby="sg-office">
+            <h3 class="skill-group-title" id="sg-office">Productividad y gestión</h3>
+            <ul class="tool-grid">
+              <li class="tool"><span class="tool-logo"><img src="img/logo_word.png" width="70" height="70" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Microsoft Word</span><span class="tool-use">Documentación profesional</span></span></li>
+              <li class="tool"><span class="tool-logo"><img src="img/logo_access.png" width="70" height="70" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Microsoft Access</span><span class="tool-use">Bases de datos</span></span></li>
+              <li class="tool"><span class="tool-logo tool-logo--wide"><img src="img/logo_odoo.png" width="130" height="45" alt="" loading="lazy"></span><span class="tool-text"><span class="tool-name">Odoo</span><span class="tool-use">ERP de gestión empresarial</span></span></li>
+            </ul>
+          </section>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="chapter" id="proyectos" aria-labelledby="t-proj">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Proyectos</p>
+          <h2 class="chapter-title" id="t-proj" data-i18n="title.proj">Proyectos <em>y programas</em></h2>
+        </header>
+
+        <div class="projects">
+          <article class="project project--feature reveal" id="proj-atlic" aria-labelledby="p-atlic">
+            <div class="project-media"><img src="img/logo_atlic.png" width="180" height="66" alt="Logotipo de ATLIC, Atlantic Innoblue Communities" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Proyecto europeo</span><span class="tabular">Ene — Nov 2024</span></p>
+              <h3 class="project-title" id="p-atlic">ATLIC <span>Atlantic Innoblue Communities</span></h3>
+              <p>Proyecto europeo de innovación y desarrollo de comunidades del Atlántico. Participé en actividades de colaboración con equipos de varios países, trabajando la comunicación intercultural y la gestión de proyectos.</p>
+            </div>
+          </article>
+          <article class="project reveal" id="proj-olives" aria-labelledby="p-olives">
+            <div class="project-media"><img src="img/logo_erasmus.png" width="592" height="147" alt="Logotipo de Erasmus+" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Erasmus+</span><span class="tabular">Nov 2024</span></p>
+              <h3 class="project-title" id="p-olives">Green Olives Europe</h3>
+              <p>Proyecto Erasmus+ sobre sostenibilidad y emprendimiento verde. Con él obtuve el Youthpass, el certificado de la Unión Europea que reconoce lo aprendido en programas de educación no formal.</p>
+            </div>
+          </article>
+          <article class="project reveal" id="proj-santander" aria-labelledby="p-santander">
+            <div class="project-media"><img src="img/logo_santander.png" width="180" height="100" alt="Logotipo de Santander X Explorer" loading="lazy"></div>
+            <div class="project-body">
+              <p class="project-meta"><span>Programa de emprendimiento</span><span class="tabular">Ene — Abr 2024</span></p>
+              <h3 class="project-title" id="p-santander">Santander X Explorer</h3>
+              <p>Programa de Santander X para desarrollar habilidades emprendedoras y conectar con el ecosistema de startups y talento joven.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CURSOS Y CERTIFICACIONES ============ -->
+    <section class="chapter" id="cursos" aria-labelledby="t-cursos">
+      <div class="wrap">
+        <header class="chapter-head reveal">
+          <p class="kicker">Formación complementaria</p>
+          <h2 class="chapter-title" id="t-cursos" data-i18n="title.cursos">Cursos y <em>certificaciones</em></h2>
+        </header>
+
+        <ul class="courses">
+          <li class="course reveal">
+            <span class="course-logo"><img src="img/logo_googleanalytics.png" width="140" height="48" alt="" loading="lazy"></span>
+            <div>
+              <h3 class="course-title">Google Analytics</h3>
+              <p class="course-meta">Universidad de Santiago de Compostela · <span class="tabular">Abr 2025</span></p>
+            </div>
+          </li>
+          <li class="course reveal">
+            <span class="course-logo"><img src="img/logo_usc.png" width="130" height="80" alt="" loading="lazy"></span>
+            <div>
+              <h3 class="course-title" lang="gl">Dixitalización integral nas empresas agroalimentarias</h3>
+              <p class="course-meta">Universidad de Santiago de Compostela · <span class="tabular">Jun 2024</span></p>
+            </div>
+          </li>
+          <li class="course reveal">
+            <span class="course-logo"><img src="img/logo_trinity.png" width="70" height="70" alt="" loading="lazy"></span>
+            <div>
+              <h3 class="course-title">Inglés · B2</h3>
+              <p class="course-meta">Trinity College London · Certificado oficial</p>
+            </div>
+          </li>
+          <li class="course reveal">
+            <span class="course-logo"><img src="img/logo_rfep_transparente.png" width="294" height="287" alt="" loading="lazy"></span>
+            <div>
+              <h3 class="course-title">Título de Entrenador de Hockey sobre Patines · Nivel I</h3>
+              <p class="course-meta">Real Federación Española de Patinaje · Certificado oficial</p>
+            </div>
+          </li>
+          <li class="course reveal">
+            <span class="course-logo"><img src="img/logo_fgp_blanco.png" width="221" height="220" alt="" loading="lazy"></span>
+            <div>
+              <h3 class="course-title">Curso de Árbitro de Hockey sobre Patines</h3>
+              <p class="course-meta">Federación Galega de Patinaxe</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="chapter chapter--contact" id="contacto" aria-labelledby="t-contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-main reveal">
+            <p class="kicker">Contacto</p>
+            <h2 class="chapter-title" id="t-contact" data-i18n="title.contact">Hablemos</h2>
+            <p class="contact-intro">Para ofertas, prácticas o cualquier pregunta, escríbeme por email o por LinkedIn.</p>
+
+            <div class="email-row">
+              <a class="email-link" href="mailto:sergio.cajide04@gmail.com">sergio.cajide04@gmail.com</a>
+              <button class="btn btn--line btn--sm" type="button" id="copyEmail" data-copy="sergio.cajide04@gmail.com">
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="1.5"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></svg>
+                <span class="copy-label" data-i18n-skip>Copiar</span>
+              </button>
+              <span class="sr-only" role="status" id="copyStatus" data-i18n-skip></span>
+            </div>
+
+            <dl class="contact-list">
+              <div><dt>Teléfono</dt><dd><a href="tel:+34609332572">+34 609 332 572</a></dd></div>
+              <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/sergio-cajide-g%C3%B3mez-41b924311/" target="_blank" rel="noopener">Sergio Cajide Gómez<span class="sr-only"> (se abre en una pestaña nueva)</span> <span aria-hidden="true">↗</span></a></dd></div>
+              <div><dt>Ubicación</dt><dd>A Coruña, Galicia</dd></div>
+            </dl>
+
+            <a class="cv-card" data-cv href="assets/documents/CV_Sergio_Cajide_Gomez_ES.pdf" download="CV_Sergio_Cajide_Gomez_ES.pdf">
+              <img data-cv-preview src="assets/img/cv-preview-es.webp" width="447" height="632" alt="" loading="lazy">
+              <span class="cv-card-text">
+                <span class="cv-card-title">Currículum</span>
+                <span class="cv-card-meta">PDF · versión en español · 168 KB</span>
+                <span class="cv-card-cta">Descargar <span aria-hidden="true">↓</span></span>
+              </span>
+            </a>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <p class="contact-label">Enviar un mensaje</p>
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="field">
+                <label for="asunto">Asunto <span class="optional">opcional</span></label>
+                <input type="text" id="asunto" name="asunto">
+              </div>
+              <div class="field">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              </div>
+              <p class="form-error" id="formError" role="alert" data-i18n-skip hidden></p>
+              <button type="submit" class="btn btn--ink">Preparar email <span aria-hidden="true">→</span></button>
+              <p class="form-note">Se abrirá tu aplicación de correo con el mensaje listo para enviar.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Sergio Cajide Gómez</p>
+      <a class="link" href="#top">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <!-- Visor de diplomas -->
+  <dialog class="viewer" id="viewer" aria-labelledby="viewerTitle">
+    <div class="viewer-frame">
+      <div class="viewer-bar">
+        <p class="viewer-title" id="viewerTitle">Diploma</p>
+        <div class="viewer-tools">
+          <button class="viewer-btn" type="button" id="viewerZoom" aria-pressed="false">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.4-4.4M11 8v6M8 11h6"/></svg>
+            <span class="viewer-zoom-label" data-i18n-skip>Ampliar</span>
+          </button>
+          <a class="viewer-btn" id="viewerPdf" href="#" target="_blank" rel="noopener">PDF original<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+          <a class="viewer-btn" id="viewerVerify" href="#" target="_blank" rel="noopener">Verificar<span class="sr-only"> en Coursera (se abre en una pestaña nueva)</span></a>
+          <button class="icon-btn icon-btn--light" type="button" id="viewerClose" aria-label="Cerrar el visor">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="viewer-stage" id="viewerStage">
+        <img id="viewerImg" src="data:," alt="" width="2376" height="1836">
+      </div>
+    </div>
+  </dialog>
+
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
