@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Sergio Cajide Gómez</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+    <img src="img/SCG_logo.png" alt="SCG Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+      <li><a href="herramientas.html">Herramientas</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <section class="page-header container">
+    <p class="page-eyebrow">05 — Contacto</p>
+    <h1 class="page-title">Hablemos<br><em>y colaboremos</em></h1>
+  </section>
+
+  <section class="contact-section container">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <p class="contact-intro">Estoy disponible para oportunidades profesionales, prácticas y proyectos de colaboración en los ámbitos de marketing digital, revenue management y tecnología empresarial.</p>
+
+        <div class="contact-methods">
+          <a href="mailto:sergio.cajide04@gmail.com" class="contact-method">
+            <div class="contact-method-icon">✉</div>
+            <div>
+              <p class="contact-method-label">Email</p>
+              <p class="contact-method-value">sergio.cajide04@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+34609332572" class="contact-method">
+            <div class="contact-method-icon">☎</div>
+            <div>
+              <p class="contact-method-label">Teléfono</p>
+              <p class="contact-method-value">+34 609 332 572</p>
+            </div>
+          </a>
+
+          <div class="contact-method">
+            <div class="contact-method-icon">📍</div>
+            <div>
+              <p class="contact-method-label">Ubicación</p>
+              <p class="contact-method-value">A Coruña, Galicia</p>
+            </div>
+          </div>
+
+          <a href="https://es.linkedin.com/in/sergio-cajide-g%C3%B3mez-41b924311" target="_blank" class="contact-method">
+            <div class="contact-method-icon">in</div>
+            <div>
+              <p class="contact-method-label">LinkedIn</p>
+              <p class="contact-method-value">Sergio Cajide Gómez</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="availability-box">
+          <span class="avail-dot"></span>
+          <p>Disponible para nuevas oportunidades</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3 class="form-title">Envíame un mensaje</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+          <p class="form-note">* Este formulario abre tu cliente de email para enviar el mensaje directamente.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+ <nav class="mobile-bottom-nav">
+  <a href="index.html">Inicio</a>
+  <a href="sobre-mi.html">Sobre mí</a>
+  <a href="experiencia.html">Experiencia</a>
+  <a href="herramientas.html">Herramientas</a>
+  <a href="proyectos.html">Proyectos</a>
+  </nav>
+  <footer class="footer">
+    <p>© 2025 Sergio Cajide Gómez · <a href="mailto:sergio.cajide04@gmail.com">sergio.cajide04@gmail.com</a></p>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const asunto = document.getElementById('asunto').value || 'Contacto desde portfolio';
+      const mensaje = document.getElementById('mensaje').value;
+      const body = `Nombre: ${nombre}\nEmail: ${email}\n\n${mensaje}`;
+      window.location.href = `mailto:sergio.cajide04@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>
